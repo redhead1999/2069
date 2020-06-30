@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash1"
+    tools:context=".GameOverActivity">
+
+    <TextView android:textSize="70dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#f11313"
+        android:id="@+id/gameOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="211dp"
+        android:text="Game Over"
+        android:layout_alignParentTop="true"
+        app:fontFamily="casual"/>
+
+    <Button android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#ecebeb"
+        android:id="@+id/play_again_btn"
+        android:background="#673ab7"
+        android:padding="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Играть снова"
+        android:layout_below="@+id/gameOver"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"/>
+    
+    <TextView android:textSize="50sp"
+
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffc107"
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-359dp"
+        android:layout_marginRight="1dp"
+        android:text="Счёт"
+        android:layout_below="@+id/play_again_btn"
+        android:layout_alignParentRight="true"/>
+
+    <TextView android:textSize="45sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffc107"
+        android:id="@+id/highScoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-299dp"
+        android:layout_marginBottom="-232dp"
+        android:text="Лучший результат"
+        android:layout_above="@+id/play_again_btn"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
